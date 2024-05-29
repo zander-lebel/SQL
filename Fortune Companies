@@ -60,7 +60,7 @@ VALUES
 
 
 
-# Determining which companies in the Technology sector have the best vacation
+# Determining which companies in the Technology sector have the best vacation policy
 
 Select company_name,
 CASE
@@ -71,14 +71,14 @@ END as Vacation_Encouragement
 FROM fortune_companies
 WHERE industry='Technology';
 
-#Determining which Industry has average tenure greater than or equal to 2 years
+#Determining which Industry has an average tenure greater than or equal to 2 years
 
 SELECT industry, AVG(avg_employee_tenure) AS Average_Tenure
 FROM fortune_companies
 GROUP BY industry
 HAVING AVG(avg_employee_tenure) >= 2;
 
-# Which companies have paid time off at least 22 day *and* at least 8 weeks maternity leave
+# Determine which companies have paid time off at least 22 days *and* at least 8 weeks of maternity leave
 
 SELECT company_name
 FROM fortune_companies
