@@ -39,7 +39,7 @@ Select sum (price)
 From superstore
 where average_rating=4.3;
 
-#Show a statistic about the price for items in the category of "Kitchen Supplies".
+#Show a statistic about price for items in the category of "Kitchen Supplies".
 
 SELECT SUM(price) AS total_price
 FROM superstore
