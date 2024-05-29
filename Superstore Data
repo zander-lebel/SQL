@@ -28,21 +28,25 @@ VALUES
 #For this project, I used SQL to query the Superstore database to get information about items sold at the store and their prices. 
 
 #Write a SQL query that orders the items by price.
+
 Select item_name, price
 From superstore
 Order by price asc;
 
-#Show a statistic about the items price.
+#Show a statistic about the item's price.
+
 Select sum (price)
 From superstore
 where average_rating=4.3;
 
-#Show a statistic about the price for items in the category of "Kitchen Supplies". 
+#Show a statistic about the price for items in the category of "Kitchen Supplies".
+
 SELECT SUM(price) AS total_price
 FROM superstore
 WHERE category = 'Kitchen Supplies';
 
 #How many "Wireless Bluetooth Speakers" were in stock?
+
 SELECT stock_quantity
 FROM superstore
 WHERE item_name = 'Wireless Bluetooth Speaker';
